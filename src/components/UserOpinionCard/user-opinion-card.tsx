@@ -1,10 +1,15 @@
-import { Avatar } from 'components/Avatar'
-import { Card } from 'components/Card'
-import { Hbox, HboxItem, HboxSeparator, Separator } from 'components/Hbox'
-import { Body, H4, H5 } from 'components/Typography'
-import * as S from './user-opinion-card.component.style'
+import { Avatar } from 'components/Avatar/avatar.style'
+import { Card } from 'components/Card/card'
+import {
+  Hbox,
+  HboxItem,
+  HboxSeparator,
+  Separator
+} from 'components/Hbox/hbox.style'
+import { P, H4, H5 } from 'components/Typography/typography.style'
+import * as S from './user-opinion-card.style'
 
-export interface UserOpinionCardProps {
+export type UserOpinionCardProps = {
   description: string
   avatarUrl: string
   name: string
@@ -18,9 +23,9 @@ export const UserOpinionCard = (props: UserOpinionCardProps) => {
   return (
     <Card noGutter src={backgroundUrl}>
       <S.SectionWrapper>
-        <Body color="white" size="xlarge">
+        <P color="white" size="xlarge">
           <q>{description}</q>
-        </Body>
+        </P>
         <Separator />
         <Hbox>
           <HboxItem vAlign="center" noGrow>

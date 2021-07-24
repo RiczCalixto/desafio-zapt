@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import * as S from './card.component.style'
+import * as S from './card.style'
 import { CardProps } from './card.model'
 
 export const Card = ({ color, noGutter, children, src }: CardProps) => (

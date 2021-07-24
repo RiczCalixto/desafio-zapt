@@ -23,3 +23,10 @@ export type JustifyContent =
   | 'space-around'
   | 'initial'
   | 'inherit'
+
+export enum BreakPoints {
+  MOBILE = 576,
+  TABLET = 768,
+  DESKTOP = 992,
+  XDESKTOP = 1200
+}

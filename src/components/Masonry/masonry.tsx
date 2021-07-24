@@ -1,7 +1,7 @@
 import ReactMasonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import { buildResponsiveObject } from './masonry.utils'
 
-interface MasonryProps {
+type MasonryProps = {
   children: React.ReactNode
   mobile?: number
   tablet?: number

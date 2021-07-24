@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { SocialComments } from './social-comments.component'
+import { SocialComments } from './social-comments'
 
 export default {
   title: 'SocialComments component'

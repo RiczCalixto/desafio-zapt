@@ -1,7 +1,7 @@
 import { AlignItems, JustifyContent } from 'model/commom-style-types'
 import styled from 'styled-components'
 
-interface HboxProps {
+type HboxProps = {
   hAlign?: AlignItems
   vAlign?: JustifyContent
   noGrow?: boolean

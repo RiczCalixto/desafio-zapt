@@ -3,17 +3,16 @@ import styled, { css } from 'styled-components'
 import { AvatarProps } from './avatar.model'
 
 export const Avatar = styled.div<AvatarProps>`
-  ${({ size, imageUrl, borderColor, theme }) => css`
+  ${({ size = 'small', imageUrl, borderColor = 'white', theme }) => css`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: ${size ? theme.imageSizes[size] : theme.imageSizes.small};
-    height: ${size ? theme.imageSizes[size] : theme.imageSizes.small};
+    width: ${theme.imageSizes[size]};
+    height: ${theme.imageSizes[size]};
     background: ${theme.colors.white} url(${imageUrl}) no-repeat center center;
     background-size: cover;
     color: ${theme.colors.black};
     border-radius: ${theme.border.circle};
-    border: 1px solid
-      ${borderColor ? theme.colors[borderColor] : theme.colors.white};
+    border: 1px solid ${theme.colors[borderColor]};
   `}
 `

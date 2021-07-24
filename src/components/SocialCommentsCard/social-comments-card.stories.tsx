@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { SocialCommentsCard } from './social-comments-card.component'
+import { SocialCommentsCard } from './social-comments-card'
 
 export default {
   title: 'SocialCommentsCard component',

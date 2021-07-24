@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
-import { Card } from './card.component'
-import { Body } from 'components/Typography'
+import { P } from 'components/Typography/typography.style'
+import { Card } from './card'
 
 export default {
   title: 'Card component',
@@ -9,6 +9,6 @@ export default {
 
 export const CardStory: Story = (args) => (
   <Card {...args}>
-    <Body color="primarymain">Sou o conteúdo do card!</Body>
+    <P color="primarymain">Sou o conteúdo do card!</P>
   </Card>
 )

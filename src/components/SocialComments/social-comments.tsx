@@ -1,7 +1,7 @@
-import { H2, Header } from 'components/Typography'
-import { mockCardData, SocialCommentsCard } from 'components/SocialCommentsCard'
-
-import { Masonry } from 'components/Masonry'
+import { Masonry } from 'components/Masonry/masonry'
+import { mockCardData } from 'components/SocialCommentsCard/mock-card.data'
+import { SocialCommentsCard } from 'components/SocialCommentsCard/social-comments-card'
+import { H2, Header } from 'components/Typography/typography.style'
 
 export const SocialComments = () => (
   <article>

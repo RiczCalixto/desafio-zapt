@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import * as S from './avatar.component.style'
+import * as S from './avatar.style'
 import { AvatarProps } from './avatar.model'
 
 export const Avatar = ({ imageUrl, borderColor, size }: AvatarProps) => (

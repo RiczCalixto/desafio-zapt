@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Story, Meta } from '@storybook/react/types-6-0'
 
-import { Avatar } from './avatar.component'
+import { Avatar } from './avatar'
 import { AvatarProps } from './avatar.model'
 
 export default {

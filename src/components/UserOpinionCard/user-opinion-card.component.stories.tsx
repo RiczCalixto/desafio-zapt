@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { UserOpinionCard } from './user-opinion-card.component'
+import { UserOpinionCard } from './user-opinion-card'
 
 export default {
   title: 'UserOpinionCard component',

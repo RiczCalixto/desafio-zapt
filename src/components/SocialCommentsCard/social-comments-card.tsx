@@ -1,9 +1,14 @@
-import { Separator, Hbox, HboxItem, HboxSeparator } from 'components/Hbox'
-import { Body, H4 } from 'components/Typography'
-import { Card } from 'components/Card'
-import { Avatar } from 'components/Avatar'
+import { Avatar } from 'components/Avatar/avatar.style'
+import { Card } from 'components/Card/card'
+import {
+  Hbox,
+  HboxItem,
+  HboxSeparator,
+  Separator
+} from 'components/Hbox/hbox.style'
+import { P, H4 } from 'components/Typography/typography.style'
 
-interface SocialCommentsCardProps {
+type SocialCommentsCardProps = {
   description: string
   avatarUrl: string
   name: string
@@ -15,9 +20,9 @@ export const SocialCommentsCard = ({
   name
 }: SocialCommentsCardProps) => (
   <Card>
-    <Body color="primarymain">
+    <P as="blockquote" color="primarymain" cite={name}>
       <q>{description}</q>
-    </Body>
+    </P>
     <Separator />
     <Hbox>
       <HboxItem vAlign="center" noGrow>
@@ -25,7 +30,9 @@ export const SocialCommentsCard = ({
       </HboxItem>
       <HboxSeparator />
       <HboxItem vAlign="center">
-        <H4 color="primaryxdark">{name}</H4>
+        <H4 as="cite" color="primaryxdark">
+          {name}
+        </H4>
       </HboxItem>
     </Hbox>
   </Card>

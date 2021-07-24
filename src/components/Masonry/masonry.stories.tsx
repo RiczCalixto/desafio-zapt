@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react'
 import { Card } from 'components/Card'
 import { H4 } from 'components/Typography'
-import { Masonry } from './masonry.component'
+import { Masonry } from './masonry'
 
 export default {
   title: 'Masonry component',

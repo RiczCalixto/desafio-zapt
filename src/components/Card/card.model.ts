@@ -1,6 +1,6 @@
 import { Color } from 'model/commom-style-types'
 
-export interface CardProps {
+export type CardProps = {
   color?: Color
   noGutter?: boolean
   src?: string

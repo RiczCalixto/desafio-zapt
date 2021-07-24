@@ -20,11 +20,9 @@ const wrapperModifier = {
 }
 
 export const Wrapper = styled.section<CardProps>`
-  ${({ theme, noGutter, color, src }) => css`
+  ${({ theme, noGutter, color = 'primaryxlight', src }) => css`
     border-radius: ${theme.border.radius};
-    background-color: ${color
-      ? theme.colors[color]
-      : theme.colors.primaryxlight};
+    background-color: ${theme.colors[color]};
     ${!!src && wrapperModifier.hasBackgroundImage(src)};
     ${wrapperModifier.noGutter(theme, !!noGutter)};
   `}

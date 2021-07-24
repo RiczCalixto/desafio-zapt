@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { H2, Body, H4, H5, H3 } from './typography.component.style'
+import { H2, P, H4, H5, H3 } from './typography.style'
 
 export default {
   title: 'Typography components'
@@ -11,7 +11,7 @@ export const TypographyStory: Story = () => (
     <H3>Sou um H3</H3>
     <H4 color="primaryxdark">Sou um H4 com primaryxdark color</H4>
     <H5>Sou um H5</H5>
-    <Body>Sou um Body</Body>
-    <Body color="primarymain">Sou um Body com primary color</Body>
+    <P>Sou um Body</P>
+    <P color="primarymain">Sou um Body com primary color</P>
   </>
 )

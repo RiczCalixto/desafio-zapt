@@ -4,6 +4,8 @@
  * (mobile, tablet, desktop, large desktop)
  */
 
+import { BreakPoints } from 'model/commom-style-types'
+
 type MasonryBreakpoints = {
   mobile: number
   tablet: number
@@ -18,9 +20,9 @@ export const buildResponsiveObject = ({
   largeDesktop
 }: MasonryBreakpoints) => {
   return {
-    576: mobile,
-    768: tablet,
-    992: desktop,
-    1200: largeDesktop
+    [BreakPoints.MOBILE]: mobile,
+    [BreakPoints.TABLET]: tablet,
+    [BreakPoints.DESKTOP]: desktop,
+    [BreakPoints.XDESKTOP]: largeDesktop
   }
 }

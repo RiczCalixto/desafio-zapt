@@ -1,7 +1,7 @@
-import { SocialComments } from 'components/SocialComments'
-import { Main } from 'components/Main'
-import { UserComments } from 'components/UserComments'
-import { Separator } from 'components/Hbox'
+import { Separator } from 'components/Hbox/hbox.style'
+import { Main } from 'components/Main/main.style'
+import { SocialComments } from 'components/SocialComments/social-comments'
+import { UserComments } from 'components/UserComments/user-comments'
 
 export default function Home() {
   return (

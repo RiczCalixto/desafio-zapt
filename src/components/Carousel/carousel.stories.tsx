@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react'
 
 import { Body } from 'components/Typography'
-import { Carousel } from './carousel.component'
+import { Carousel } from './carousel'
 
 export default {
   title: 'Carousel component',

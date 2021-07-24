@@ -1,7 +1,8 @@
+import { BreakPoints } from 'model/commom-style-types'
 import React from 'react'
 import ElasticCarousel from 'react-elastic-carousel'
 
-interface CarouselProps {
+type CarouselProps = {
   children: React.ReactNode
 }
 
@@ -12,6 +13,6 @@ export const Carousel = ({ children }: CarouselProps) => (
 )
 
 const breakPoints = [
-  { width: 768, itemsToShow: 1 },
-  { width: 1200, itemsToShow: 2, itemsToScroll: 2 }
+  { width: BreakPoints.TABLET, itemsToShow: 1 },
+  { width: BreakPoints.XDESKTOP, itemsToShow: 2, itemsToScroll: 2 }
 ]
