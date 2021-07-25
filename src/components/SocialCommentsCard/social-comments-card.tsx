@@ -20,20 +20,22 @@ export const SocialCommentsCard = ({
   name
 }: SocialCommentsCardProps) => (
   <Card>
-    <P as="blockquote" color="primarymain" cite={name}>
-      <q>{description}</q>
-    </P>
-    <Separator />
-    <Hbox>
-      <HboxItem vAlign="center" noGrow>
-        <Avatar borderColor="primarylight" imageUrl={avatarUrl} />
-      </HboxItem>
-      <HboxSeparator />
-      <HboxItem vAlign="center">
-        <H4 as="cite" color="primaryxdark">
-          {name}
-        </H4>
-      </HboxItem>
-    </Hbox>
+    <blockquote cite={name}>
+      <P as="q" color="primarymain">
+        {description}
+      </P>
+      <Separator />
+      <Hbox>
+        <HboxItem vAlign="center" noGrow>
+          <Avatar borderColor="primarylight" imageUrl={avatarUrl} />
+        </HboxItem>
+        <HboxSeparator />
+        <HboxItem vAlign="center">
+          <H4 as="cite" color="primaryxdark">
+            {name}
+          </H4>
+        </HboxItem>
+      </Hbox>
+    </blockquote>
   </Card>
 )

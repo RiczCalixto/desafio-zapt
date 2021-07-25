@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
+import { P } from 'components/Typography/typography.style'
 
-import { Body } from 'components/Typography'
 import { Carousel } from './carousel'
 
 export default {
@@ -10,9 +10,9 @@ export default {
 
 export const CarouselStory: Story = (args) => (
   <Carousel {...args}>
-    <Body color="primarymain">Sou o conteúdo do carousel</Body>
-    <Body color="primarymain">Sou o conteúdo do carousel</Body>
-    <Body color="primarymain">Sou o conteúdo do carousel</Body>
-    <Body color="primarymain">Sou o conteúdo do carousel</Body>
+    <P color="primarymain">Sou o conteúdo do carousel</P>
+    <P color="primarymain">Sou o conteúdo do carousel</P>
+    <P color="primarymain">Sou o conteúdo do carousel</P>
+    <P color="primarymain">Sou o conteúdo do carousel</P>
   </Carousel>
 )

@@ -39,7 +39,7 @@ export const H3 = styled.h3`
   `}
 `
 
-export const H4 = styled.h4<BodyProps>`
+export const H4 = styled.h4<PProps>`
   ${({ theme, color = 'black' }) => css`
     color: ${theme.colors[color]};
     font-size: ${theme.font.sizes.small};
@@ -50,7 +50,7 @@ export const H4 = styled.h4<BodyProps>`
   `}
 `
 
-export const H5 = styled.h4<BodyProps>`
+export const H5 = styled.h4<PProps>`
   ${({ theme, color = 'black' }) => css`
     color: ${theme.colors[color]};
     font-size: ${theme.font.sizes.xsmall};
@@ -61,12 +61,12 @@ export const H5 = styled.h4<BodyProps>`
   `}
 `
 
-type BodyProps = {
+type PProps = {
   color?: Color
   size?: FontSize
 }
 
-export const P = styled.p<BodyProps>`
+export const P = styled.p<PProps>`
   ${({ theme, color = 'black', size = 'medium' }) => css`
     color: ${theme.colors[color]};
     font-size: ${theme.font.sizes[size]};
