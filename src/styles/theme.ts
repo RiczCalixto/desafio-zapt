@@ -1,4 +1,12 @@
+import { BreakPoints } from 'model/commom-style-types'
+
 export const theme = {
+  breakpoints: {
+    mobile: BreakPoints.MOBILE,
+    tablet: BreakPoints.TABLET,
+    desktop: BreakPoints.DESKTOP,
+    xdesktop: BreakPoints.XDESKTOP
+  },
   border: {
     radius: '0.4rem',
     circle: '50%'
@@ -25,6 +33,7 @@ export const theme = {
     primaryxdark: '#001C33',
     white: '#FAFAFA',
     black: '#000000',
+    softblack: 'rgba(0, 0, 0, 0.12)',
     neutral: '#5C5B5B'
   },
   spacings: {

@@ -1,14 +1,5 @@
-import { Separator } from 'components/Hbox/hbox.style'
-import { Main } from 'components/Main/main.style'
-import { SocialComments } from 'components/SocialComments/social-comments'
-import { UserComments } from 'components/UserComments/user-comments'
+import { Home } from 'templates/Home/home'
 
-export default function Home() {
-  return (
-    <Main>
-      <SocialComments />
-      <Separator />
-      <UserComments />
-    </Main>
-  )
+export default function Index() {
+  return <Home />
 }

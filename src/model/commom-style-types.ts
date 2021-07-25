@@ -27,6 +27,6 @@ export type JustifyContent =
 export enum BreakPoints {
   MOBILE = 576,
   TABLET = 768,
-  DESKTOP = 992,
+  DESKTOP = 960,
   XDESKTOP = 1200
 }
